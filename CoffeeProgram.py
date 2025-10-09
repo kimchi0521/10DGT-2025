@@ -2,17 +2,32 @@
 # Author: JJ Lee
 # Date: 10-10-2025
 
-# Version 1
+# Version 2
 # TODO: Ask the user if they like coffee
 #       Record the answer
 #       Give a response back to the answer
 
+# Version 1
 # Ask the user whether they like coffee or not
-like_coffee = input("Do you like coffee? ")
+'''like_coffee = input("Do you like coffee? ")
 print(f'your answer was "{like_coffee}".')
 
 if like_coffee == "yes":
     print("That is great! I like coffee.")
 
 else:
-    print("You are missing out! Give it a try.")
+    print("You are missing out! Give it a try.")'''
+
+# Version 2
+# While loop
+# While loops let me test the program multiple times without clicking on run every time
+keep_going = ""
+while keep_going == "":
+    like_coffee = input("Do you like coffee? ")
+
+    if like_coffee == "yes" or like_coffee == "Yes" or like_coffee == "y" or like_coffee == "Y":
+        print("That is great! I like coffee.")
+
+    elif like_coffee == "no" or like_coffee == "No" or like_coffee == "n" or like_coffee == "N":
+        print("You are missing out! Give it a try.")
+
