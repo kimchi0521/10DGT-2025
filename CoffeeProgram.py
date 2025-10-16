@@ -21,13 +21,17 @@ else:
 # Version 2
 # While loop
 # While loops let me test the program multiple times without clicking on run every time
-keep_going = ""
+keep_going = ""    # The variable contains an empty string
 while keep_going == "":
     like_coffee = input("Do you like coffee? ")
 
     if like_coffee == "yes" or like_coffee == "Yes" or like_coffee == "y" or like_coffee == "Y":
         print("That is great! I like coffee.")
+        keep_going = "finished"
 
     elif like_coffee == "no" or like_coffee == "No" or like_coffee == "n" or like_coffee == "N":
         print("You are missing out! Give it a try.")
+        keep_going = "finished"
 
+    else:
+        print("It's a yes or no question.")
